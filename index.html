@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expense Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Expense Tracker</h1>
+
+      <div class="balance-container">
+        <img
+          style="margin-left: 43%"
+          src="541-5413236_portable-network-graphics-clipart.png"
+          width="60"
+          alt=""
+        />
+        <h2>Your Balance</h2>
+        <div id="balance"></div>
+      </div>
+
+      <div class="cash-container">
+        <div class="income-container">
+          <img src="yZSlX5-money-bag-vector.png" width="50" alt="" />
+          <h2 id="inc">Income</h2>
+
+          <div id="income"></div>
+        </div>
+        <div class="expense-container">
+          <img style="margin-left: 20px" src="2045900.png" width="50" alt="" />
+          <h2 id="exp">Expense</h2>
+          <div id="expense"></div>
+        </div>
+      </div>
+
+      <div class="transaction-container">
+        <h2>Transaction History</h2>
+        <ul id="transaction"></ul>
+      </div>
+
+      <div class="form-container">
+        <form onsubmit="return false;">
+          <label for="name">NAME</label>
+          <input id="name" type="text" />
+
+          <label for="amount">AMOUNT</label>
+
+          <input id="amount" type="number" /><br />
+
+          <span style="color: red; margin-left: 46%" class="feedback"></span>
+          <!-- <input id="date" name="date" /> -->
+
+          <br />
+          <button id="incomeBtn">Add Income</button>
+          <button id="expenseBtn">Add Expense</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+:root {
+  --box-shadow: 0px 1px 4px 1px rgba(199, 199, 199, 1);
+  --income: rgb(43, 212, 43);
+  --expense: red;
+}
+
+body {
+  font-family: 'Rubik', 'sans-serfi';
+  display: flex;
+  background-color: aliceblue;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#inc {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-right: 120px;
+}
+#exp {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+h3 {
+  background-color: green;
+  color: whitesmoke;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  margin-left: 33%;
+}
+.balance-container {
+  box-shadow: var(--box-shadow);
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+#balance {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(43, 212, 43);
+}
+
+.cash-container {
+  display: flex;
+  box-shadow: var(--box-shadow);
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 10px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+.income-container {
+  border-right: 5px solid #fffdfd;
+}
+
+.expense-container {
+  padding-left: 80px;
+}
+
+#income {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--income);
+}
+#expense {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--expense);
+}
+
+.transaction-container {
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+#transaction {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(155, 0, 0);
+  color: whitesmoke;
+}
+
+#transaction li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: black;
+  color: whitesmoke;
+}
+
+#transaction li span {
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+#transaction li .income-amt {
+  background-color: var(--income);
+}
+
+#transaction li .expense-amt {
+  background-color: var(--expense);
+}
+
+#transaction li button {
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.form-container {
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+.form-container form input {
+  height: 25px;
+  margin-bottom: 10px;
+}
+#name {
+  height: 30px;
+}
+.form-container form button {
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 85px;
+  cursor: pointer;
+}
+
+#incomeBtn {
+  margin-top: 5px;
+  border-radius: 20px;
+  background-color: var(--income);
+}
+
+#expenseBtn {
+  border-radius: 20px;
+
+  background-color: var(--expense);
+}
